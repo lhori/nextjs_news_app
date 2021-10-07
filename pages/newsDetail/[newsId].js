@@ -1,6 +1,7 @@
 import Articles from "../../components/articles/Articles";
 
 function newsDetail(props) {
+
   return (
     <>
       <Articles articleData={props.article} />
@@ -15,9 +16,14 @@ export async function getServerSideProps(context) {
   );
 
   const newsJson = await newsApiRes.json();
-  console.log(newsJson);
-  const newsArticles = newsJson.articles;
-
+  // console.log(newsJson);
+ 
+  if (!newsJson){
+    return{
+      notFound: true,
+    }
+  }
+   const newsArticles = newsJson.articles;
   return {
     props: {
       article: newsArticles,

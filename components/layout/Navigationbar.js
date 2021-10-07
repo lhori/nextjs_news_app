@@ -7,7 +7,7 @@ function Navigationbar() {
     <nav className={classes.pageNav}>
       <ul>
         <li>
-          <Link href="/top/1">
+          <Link href="/top">
             <a>
               <div className={classes.NavLogo}>
                 <Icons.FaGlobe />
