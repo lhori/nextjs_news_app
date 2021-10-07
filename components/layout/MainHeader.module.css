@@ -1,0 +1,36 @@
+.header {
+  display: grid;
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  padding: 15px 0;
+  background-color: #222;
+  margin: 0;
+}
+
+.header a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: rgba(230, 230, 230, 0.938);
+}
+
+.siteLogo{
+  align-self: flex-start;
+}
+
+.logo{
+  font-size: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.logoFont{
+
+  font-size: 26px;
+}

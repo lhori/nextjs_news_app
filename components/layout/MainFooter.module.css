@@ -1,0 +1,15 @@
+.footerContainer {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    padding: 20px 0;
+    background-color: #222;
+    color:#fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footerContainer a:hover{
+    color: rgba(230, 230, 230, 0.938);
+
+    
+}
