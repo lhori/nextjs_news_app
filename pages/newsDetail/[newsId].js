@@ -16,7 +16,6 @@ export async function getServerSideProps(context) {
   );
 
   const newsJson = await newsApiRes.json();
-  // console.log(newsJson);
  
   if (!newsJson){
     return{
